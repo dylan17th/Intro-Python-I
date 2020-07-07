@@ -17,7 +17,6 @@ class Waypoint(LatLon):
         super().__init__(lat, lon)
         self.name = name
 
-
     def __repr__(self):
         print(f"{self.name}, {self.lat}, {self.lon}")
 # Make a class Geocache that can be passed parameters `name`, `difficulty`,
@@ -29,7 +28,6 @@ class Geocache(Waypoint):
         super().__init__(name,lat, lon)
         self.difficulty = difficulty
         self.size = size
-
 
     def __repr__(self):
         print(f"Name: {self.name}\nDifficulty: {self.difficulty}\nsize: {self.size}\nlat: {self.lat}\nlon: {self.lon}")
